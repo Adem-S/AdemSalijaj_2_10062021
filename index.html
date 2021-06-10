@@ -4,8 +4,289 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Reversia</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9acfb66856.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="header__nav">
+        <img src="images/logo/Reservia.svg" alt="logo Reservia" />
+        <nav>
+          <ul>
+            <li class="nav__link"><a href="#lodging">Hébergements</a></li>
+            <li class="nav__link"><a href="#activity">Activités</a></li>
+            <li class="nav__subscription"><a href="#">S'inscrire</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__title">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+      </div>
+    </header>
+
+    <form class="search">
+      <span class="fas fa-map-marker-alt search__loc"></span>
+      <input type="text" />
+      <button class="search__txt">Rechercher</button>
+      <button class="search__loop"><span class="fas fa-search"></span></button>
+    </form>
+
+    <div class="filter">
+      <p class="filter__title">Filtres</p>
+      <button class="filter__button">
+        <span class="fas fa-money-bill-wave"></span>
+        Economique
+      </button>
+      <button class="filter__button">
+        <span class="fas fa-child"></span>
+        Familial
+      </button>
+      <button class="filter__button">
+        <span class="fas fa-heart"></span>
+        Romantique
+      </button>
+      <button class="filter__button">
+        <span class="fas fa-dog"></span>
+        Animaux autorisés
+      </button>
+    </div>
+
+    <aside class="aside__information">
+      <span class="fas fa-info"></span>
+      <p>Plus de 500 logements sont disponibles dans cette ville</p>
+    </aside>
+
+    <main>
+      <section class="section section--bg section__lodging" id="lodging">
+        <div class="section__title">
+          <h2>Hébergements à Marseille</h2>
+        </div>
+
+        <div class="section__lodging__structure">
+          <a href="" class="section__card card__Auberge-la-cannebière">
+            <div class="card__info card__info--bottom">
+              <h3>Auberge la Cannebière</h3>
+              <p>Nuit à partir de <span>25€</span></p>
+              <div class="card__star card__star--4">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+              </div>
+            </div>
+          </a>
+
+          <a href="" class="section__card card__Hotel-du-port">
+            <div class="card__info card__info--bottom">
+              <h3>Hotêl du port</h3>
+              <p>Nuit à partir de <span>52€</span></p>
+              <div class="card__star card__star--5">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+              </div>
+            </div>
+          </a>
+
+          <a href="" class="section__card card-Hotel-les-mouettes">
+            <div class="card__info card__info--bottom">
+              <h3>Hôtel Les mouettes</h3>
+              <p>Nuit à partir de <span>76€</span></p>
+              <div class="card__star card__star--4">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+              </div>
+            </div>
+          </a>
+
+          <a href="" class="section__card card-Hotel-de-la-mer">
+            <div class="card__info card__info--bottom">
+              <h3>Hôtel de la mer</h3>
+              <p>Nuit à partir de <span>46€</span></p>
+              <div class="card__star card__star--3">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+              </div>
+            </div>
+          </a>
+
+          <a href="" class="section__card card__Auberge-le-panier">
+            <div class="card__info card__info--bottom">
+              <h3>Auberge le Panier</h3>
+              <p>Nuit à partir de <span>23€</span></p>
+              <div class="card__star card__star--4">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+              </div>
+            </div>
+          </a>
+
+          <a href="" class="section__card card-Hotel-chez-Amina">
+            <div class="card__info card__info--bottom">
+              <h3>Hôtel chez Amia</h3>
+              <p>Nuit à partir de <span>96€</span></p>
+              <div class="card__star card__star--5">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <a class="show-more">Afficher plus</a>
+      </section>
+
+      <section class="section section--bg section__popular">
+        <div class="section__title">
+          <h2>Les plus populaires</h2>
+          <span class="fas fa-chart-line"></span>
+        </div>
+
+        <a href="" class="section__popular__structure">
+          <div class="section__card card-Hotel-le-soleil-du-matin">
+            <div class="card__info card__info--right">
+              <h3>Hôtel Le soleil du matin</h3>
+              <p>Nuit à partir de <span>128€</span></p>
+              <div class="card__star card__star--5">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+              </div>
+            </div>
+          </div>
+
+          <a
+            href=""
+            class="section__card card-Au-coeur-de-leau-Chambres-dhôtes"
+          >
+            <div class="card__info card__info--right">
+              <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+              <p>Nuit à partir de <span>71€</span></p>
+              <div class="card__star card__star--4">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+              </div>
+            </div>
+          </a>
+
+          <a href="" class="section__card card-Hotel-Tout-bleu-et-Blanc">
+            <div class="card__info card__info--right">
+              <h3>Hôtel Tout bleau et Blanc</h3>
+              <p>Nuit à partir de <span>68€</span></p>
+              <div class="card__star card__star--5">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+              </div>
+            </div>
+          </a>
+        </a>
+      </section>
+
+      <section class="section section__activity" id="activity">
+        <h2 class="section__title">Activités à Marseille</h2>
+
+        <div class="section__activity__structure">
+          <a href="" class="section__card card-Vieux-port activity1">
+            <div class="card__info card__info--bottom card__info--radius">
+              <h3>Vieux Port</h3>
+            </div>
+          </a>
+
+          <a href="" class="section__card card-Fort-de-Promègues activity2">
+            <div class="card__info card__info--bottom card__info--radius">
+              <h3>Forts de Promègues</h3>
+            </div>
+          </a>
+
+          <a href="" class="section__card card-Iles-du-Frioul activity3">
+            <div class="card__info card__info--bottom card__info--radius">
+              <h3>Îles du Froul</h3>
+            </div>
+          </a>
+
+          <a
+            href=""
+            class="section__card card-Parc-natial-des-calanques activity4"
+          >
+            <div class="card__info card__info--bottom card__info--radius">
+              <h3>Parc National des Calanques</h3>
+            </div>
+          </a>
+
+          <a
+            href=""
+            class="section__card card-Notre-dame-de-la-garde activity5"
+          >
+            <div class="card__info card__info--bottom card__info--radius">
+              <h3>Notre-Dame-de-la-Garde</h3>
+            </div>
+          </a>
+
+          <a href="" class="section__card card-Parc-longchamp activity6">
+            <div class="card__info card__info--bottom card__info--radius">
+              <h3>Parc Longchamp</h3>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__section">
+        <h3>A propos</h3>
+        <ul>
+          <li><a href="">Fonctionnement du site</a></li>
+          <li><a href="">Conditions générales de vente</a></li>
+          <li><a href="">Données et confidentialité</a></li>
+        </ul>
+      </div>
+      <div class="footer__section">
+        <h3>Nos hébergements</h3>
+        <ul>
+          <li><a href="">Charte qualité</a></li>
+          <li><a href="">Soumettre votre hôtel</a></li>
+        </ul>
+      </div>
+      <div class="footer__section">
+        <h3>Assistance</h3>
+        <ul>
+          <li><a href="">Centre d'aide</a></li>
+          <li><a href="">Nous contacter</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
