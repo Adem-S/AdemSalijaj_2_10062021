@@ -1,4 +1,3 @@
-/* VAR  */
 :root {
   --gray: #f2f2f2;
   --blue: #0065fc;
@@ -155,7 +154,7 @@ h1 {
 }
 
 .search__loop span {
-  background-color: none;
+  background-color: transparent;
 }
 
 /* FILTER */
